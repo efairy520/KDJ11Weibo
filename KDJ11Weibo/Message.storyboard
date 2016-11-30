@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="XTv-mU-rTS">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--消息-->
+        <scene sceneID="Zwm-NI-2dH">
+            <objects>
+                <tableViewController id="uVO-7h-i4F" customClass="KDJMessageViewController" customModule="KDJ11Weibo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="BCr-R3-Aul">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="uVO-7h-i4F" id="48N-GE-mr5"/>
+                            <outlet property="delegate" destination="uVO-7h-i4F" id="LMe-v4-xes"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="消息" id="U9J-fH-wE6"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7xw-74-xW4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1354.5" y="221.5"/>
+        </scene>
+        <!--消息-->
+        <scene sceneID="chz-xT-Xa2">
+            <objects>
+                <navigationController id="XTv-mU-rTS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="消息" image="tabbar_message_center" selectedImage="tabbar_message_center_highlighted" id="PRa-ky-ltJ"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yIZ-bE-RDU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="uVO-7h-i4F" kind="relationship" relationship="rootViewController" id="vDH-W1-bCj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y3d-y8-u97" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="534.5" y="221.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tabbar_message_center" width="30" height="30"/>
+        <image name="tabbar_message_center_highlighted" width="30" height="30"/>
+    </resources>
+</document>

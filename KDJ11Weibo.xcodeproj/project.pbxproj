@@ -1,0 +1,762 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04384F1142D96DE1261D5A8A /* Pods_KDJ11Weibo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9FD2EB06C45F053AF53990 /* Pods_KDJ11Weibo.framework */; };
+		D3232DDB1DD9ACCD00F66246 /* KDJUserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3232DDA1DD9ACCD00F66246 /* KDJUserAccount.swift */; };
+		D350E52F1DDDCEAD00A0133A /* KDJPicPickerCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D350E52E1DDDCEAD00A0133A /* KDJPicPickerCollectionView.swift */; };
+		D350E5321DDDD89500A0133A /* KDJPicPickerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D350E5301DDDD89500A0133A /* KDJPicPickerViewCell.swift */; };
+		D350E5331DDDD89500A0133A /* KDJPicPickerViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D350E5311DDDD89500A0133A /* KDJPicPickerViewCell.xib */; };
+		D351AE4B1DD8048B00704485 /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = D351AE4A1DD8048B00704485 /* MainVCSettings.json */; };
+		D351AE501DD80C7000704485 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D351AE4F1DD80C7000704485 /* Main.storyboard */; };
+		D351AE541DD80E6A00704485 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D351AE531DD80E6A00704485 /* Home.storyboard */; };
+		D351AE561DD80E8200704485 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D351AE551DD80E8200704485 /* Message.storyboard */; };
+		D351AE581DD80E9D00704485 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D351AE571DD80E9D00704485 /* Discover.storyboard */; };
+		D351AE5A1DD80EB500704485 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D351AE591DD80EB500704485 /* Profile.storyboard */; };
+		D351AE601DD80FD700704485 /* Null.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D351AE5F1DD80FD700704485 /* Null.storyboard */; };
+		D364B92B1DD6B70C0013462A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D364B92A1DD6B70C0013462A /* AppDelegate.swift */; };
+		D364B9321DD6B70C0013462A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D364B9311DD6B70C0013462A /* Assets.xcassets */; };
+		D364B9351DD6B70C0013462A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D364B9331DD6B70C0013462A /* LaunchScreen.storyboard */; };
+		D364B9431DD6BE5C0013462A /* KDJMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D364B9421DD6BE5C0013462A /* KDJMainViewController.swift */; };
+		D364B9451DD6BF980013462A /* KDJHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D364B9441DD6BF980013462A /* KDJHomeViewController.swift */; };
+		D364B9471DD6BFAF0013462A /* KDJMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D364B9461DD6BFAF0013462A /* KDJMessageViewController.swift */; };
+		D364B9491DD6BFC50013462A /* KDJDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D364B9481DD6BFC50013462A /* KDJDiscoverViewController.swift */; };
+		D364B94B1DD6BFD70013462A /* KDJProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D364B94A1DD6BFD70013462A /* KDJProfileViewController.swift */; };
+		D3ABD9541DD83893006F122A /* KDJVistorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ABD9531DD83893006F122A /* KDJVistorView.swift */; };
+		D3ABD9561DD838AE006F122A /* KDJVistorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3ABD9551DD838AE006F122A /* KDJVistorView.xib */; };
+		D3ABD9581DD83CD5006F122A /* KDJBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ABD9571DD83CD5006F122A /* KDJBaseViewController.swift */; };
+		D3ABD9641DD84CDD006F122A /* KDJPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ABD9621DD84CDD006F122A /* KDJPopoverViewController.swift */; };
+		D3ABD9651DD84CDD006F122A /* KDJPopoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3ABD9631DD84CDD006F122A /* KDJPopoverViewController.xib */; };
+		D3ABDE651DE195E500163573 /* Emoticons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D3ABDE5C1DE195E500163573 /* Emoticons.bundle */; };
+		D3ABDE661DE195E500163573 /* EmotionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ABDE5D1DE195E500163573 /* EmotionController.swift */; };
+		D3ABDE671DE195E500163573 /* EmotionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ABDE5E1DE195E500163573 /* EmotionViewCell.swift */; };
+		D3ABDE681DE195E500163573 /* Emotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ABDE601DE195E500163573 /* Emotion.swift */; };
+		D3ABDE691DE195E500163573 /* EmotionAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ABDE611DE195E500163573 /* EmotionAttachment.swift */; };
+		D3ABDE6A1DE195E500163573 /* EmotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ABDE621DE195E500163573 /* EmotionManager.swift */; };
+		D3ABDE6B1DE195E500163573 /* EmotionPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ABDE631DE195E500163573 /* EmotionPackage.swift */; };
+		D3ABDE6C1DE195E500163573 /* UITextView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ABDE641DE195E500163573 /* UITextView-Extension.swift */; };
+		D3ABDE6E1DE1A1F100163573 /* KDJFindEmotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ABDE6D1DE1A1F100163573 /* KDJFindEmotion.swift */; };
+		D3ABDE711DE1C0F100163573 /* KDJPhotoBrowserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ABDE701DE1C0F100163573 /* KDJPhotoBrowserController.swift */; };
+		D3ABDE731DE1C79D00163573 /* KDJPhotoBrowserViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ABDE721DE1C79D00163573 /* KDJPhotoBrowserViewCell.swift */; };
+		D3ABDE751DE1CFFE00163573 /* KDJProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ABDE741DE1CFFE00163573 /* KDJProgressView.swift */; };
+		D3AE85B21DE1DDB200B77416 /* KDJPhotoBrowserAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AE85B11DE1DDB200B77416 /* KDJPhotoBrowserAnimator.swift */; };
+		D3D5834C1DDADC4200D47E9A /* KDJUserAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D5834B1DDADC4200D47E9A /* KDJUserAccountViewModel.swift */; };
+		D3D583541DDAE07400D47E9A /* KDJWelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D583521DDAE07400D47E9A /* KDJWelcomeViewController.swift */; };
+		D3D583551DDAE07400D47E9A /* KDJWelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3D583531DDAE07400D47E9A /* KDJWelcomeViewController.xib */; };
+		D3D5835D1DDAEADD00D47E9A /* KDJTitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D583581DDAEADD00D47E9A /* KDJTitleButton.swift */; };
+		D3D5835E1DDAEADD00D47E9A /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D583591DDAEADD00D47E9A /* UIBarButtonItem-Extension.swift */; };
+		D3D5835F1DDAEADD00D47E9A /* UIButton-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D5835A1DDAEADD00D47E9A /* UIButton-Extension.swift */; };
+		D3D583601DDAEADD00D47E9A /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D5835B1DDAEADD00D47E9A /* Common.swift */; };
+		D3D583611DDAEADD00D47E9A /* KDJNetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D5835C1DDAEADD00D47E9A /* KDJNetworkTools.swift */; };
+		D3D583661DDAEF5F00D47E9A /* KDJStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D583651DDAEF5F00D47E9A /* KDJStatus.swift */; };
+		D3D583681DDAF98C00D47E9A /* NSDate-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D583671DDAF98C00D47E9A /* NSDate-Extension.swift */; };
+		D3D5836A1DDAFC9800D47E9A /* KDJUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D583691DDAFC9800D47E9A /* KDJUser.swift */; };
+		D3D5836C1DDB076400D47E9A /* KDJStatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D5836B1DDB076400D47E9A /* KDJStatusViewModel.swift */; };
+		D3D5836E1DDB0AC300D47E9A /* KDJHomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D5836D1DDB0AC300D47E9A /* KDJHomeViewCell.swift */; };
+		D3D583701DDB4E0000D47E9A /* KDJPicCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D5836F1DDB4E0000D47E9A /* KDJPicCollectionView.swift */; };
+		D3DE78E71DD98097007A830D /* KDJPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DE78E61DD98096007A830D /* KDJPresentationController.swift */; };
+		D3DE78E91DD98C7F007A830D /* KDJPopoverAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DE78E81DD98C7F007A830D /* KDJPopoverAnimator.swift */; };
+		D3DE78F11DD99B55007A830D /* KDJOAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DE78EF1DD99B55007A830D /* KDJOAuthViewController.swift */; };
+		D3DE78F21DD99B55007A830D /* KDJOAuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3DE78F01DD99B55007A830D /* KDJOAuthViewController.xib */; };
+		D3E8887C1DDCABF600CEDBA3 /* KDJComposeTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E8887B1DDCABF600CEDBA3 /* KDJComposeTitleView.swift */; };
+		D3E8887F1DDCB23C00CEDBA3 /* KDJComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E8887D1DDCB23C00CEDBA3 /* KDJComposeViewController.swift */; };
+		D3E888801DDCB23C00CEDBA3 /* KDJComposeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3E8887E1DDCB23C00CEDBA3 /* KDJComposeViewController.xib */; };
+		D3E888821DDCB4A600CEDBA3 /* KDJComposeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E888811DDCB4A600CEDBA3 /* KDJComposeTextView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		15B0A3049A1DFC16E38345C7 /* Pods-KDJ11Weibo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KDJ11Weibo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KDJ11Weibo/Pods-KDJ11Weibo.debug.xcconfig"; sourceTree = "<group>"; };
+		2F9FD2EB06C45F053AF53990 /* Pods_KDJ11Weibo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KDJ11Weibo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52ADA1546B278E635CBC2A14 /* Pods-KDJ11Weibo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KDJ11Weibo.release.xcconfig"; path = "Pods/Target Support Files/Pods-KDJ11Weibo/Pods-KDJ11Weibo.release.xcconfig"; sourceTree = "<group>"; };
+		D3232DDA1DD9ACCD00F66246 /* KDJUserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDJUserAccount.swift; sourceTree = "<group>"; };
+		D350E52E1DDDCEAD00A0133A /* KDJPicPickerCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDJPicPickerCollectionView.swift; sourceTree = "<group>"; };
+		D350E5301DDDD89500A0133A /* KDJPicPickerViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDJPicPickerViewCell.swift; sourceTree = "<group>"; };
+		D350E5311DDDD89500A0133A /* KDJPicPickerViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KDJPicPickerViewCell.xib; sourceTree = "<group>"; };
+		D351AE4A1DD8048B00704485 /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
+		D351AE4F1DD80C7000704485 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D351AE531DD80E6A00704485 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = ../../Home.storyboard; sourceTree = "<group>"; };
+		D351AE551DD80E8200704485 /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Message.storyboard; path = ../../Message.storyboard; sourceTree = "<group>"; };
+		D351AE571DD80E9D00704485 /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Discover.storyboard; path = ../../Discover.storyboard; sourceTree = "<group>"; };
+		D351AE591DD80EB500704485 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Profile.storyboard; path = ../../Profile.storyboard; sourceTree = "<group>"; };
+		D351AE5F1DD80FD700704485 /* Null.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Null.storyboard; path = ../../../Null.storyboard; sourceTree = "<group>"; };
+		D364B9271DD6B70C0013462A /* KDJ11Weibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KDJ11Weibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D364B92A1DD6B70C0013462A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D364B9311DD6B70C0013462A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D364B9341DD6B70C0013462A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D364B9361DD6B70C0013462A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D364B9421DD6BE5C0013462A /* KDJMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDJMainViewController.swift; sourceTree = "<group>"; };
+		D364B9441DD6BF980013462A /* KDJHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDJHomeViewController.swift; sourceTree = "<group>"; };
+		D364B9461DD6BFAF0013462A /* KDJMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDJMessageViewController.swift; sourceTree = "<group>"; };
+		D364B9481DD6BFC50013462A /* KDJDiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDJDiscoverViewController.swift; sourceTree = "<group>"; };
+		D364B94A1DD6BFD70013462A /* KDJProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDJProfileViewController.swift; sourceTree = "<group>"; };
+		D3ABD9531DD83893006F122A /* KDJVistorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDJVistorView.swift; sourceTree = "<group>"; };
+		D3ABD9551DD838AE006F122A /* KDJVistorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KDJVistorView.xib; sourceTree = "<group>"; };
+		D3ABD9571DD83CD5006F122A /* KDJBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDJBaseViewController.swift; sourceTree = "<group>"; };
+		D3ABD9621DD84CDD006F122A /* KDJPopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDJPopoverViewController.swift; sourceTree = "<group>"; };
+		D3ABD9631DD84CDD006F122A /* KDJPopoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KDJPopoverViewController.xib; sourceTree = "<group>"; };
+		D3ABDE5C1DE195E500163573 /* Emoticons.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Emoticons.bundle; sourceTree = "<group>"; };
+		D3ABDE5D1DE195E500163573 /* EmotionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionController.swift; sourceTree = "<group>"; };
+		D3ABDE5E1DE195E500163573 /* EmotionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionViewCell.swift; sourceTree = "<group>"; };
+		D3ABDE601DE195E500163573 /* Emotion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emotion.swift; sourceTree = "<group>"; };
+		D3ABDE611DE195E500163573 /* EmotionAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionAttachment.swift; sourceTree = "<group>"; };
+		D3ABDE621DE195E500163573 /* EmotionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionManager.swift; sourceTree = "<group>"; };
+		D3ABDE631DE195E500163573 /* EmotionPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionPackage.swift; sourceTree = "<group>"; };
+		D3ABDE641DE195E500163573 /* UITextView-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView-Extension.swift"; sourceTree = "<group>"; };
+		D3ABDE6D1DE1A1F100163573 /* KDJFindEmotion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDJFindEmotion.swift; sourceTree = "<group>"; };
+		D3ABDE701DE1C0F100163573 /* KDJPhotoBrowserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDJPhotoBrowserController.swift; sourceTree = "<group>"; };
+		D3ABDE721DE1C79D00163573 /* KDJPhotoBrowserViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDJPhotoBrowserViewCell.swift; sourceTree = "<group>"; };
+		D3ABDE741DE1CFFE00163573 /* KDJProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDJProgressView.swift; sourceTree = "<group>"; };
+		D3AE85B11DE1DDB200B77416 /* KDJPhotoBrowserAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDJPhotoBrowserAnimator.swift; sourceTree = "<group>"; };
+		D3D5834B1DDADC4200D47E9A /* KDJUserAccountViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDJUserAccountViewModel.swift; sourceTree = "<group>"; };
+		D3D583521DDAE07400D47E9A /* KDJWelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDJWelcomeViewController.swift; sourceTree = "<group>"; };
+		D3D583531DDAE07400D47E9A /* KDJWelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KDJWelcomeViewController.xib; sourceTree = "<group>"; };
+		D3D583581DDAEADD00D47E9A /* KDJTitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDJTitleButton.swift; sourceTree = "<group>"; };
+		D3D583591DDAEADD00D47E9A /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
+		D3D5835A1DDAEADD00D47E9A /* UIButton-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton-Extension.swift"; sourceTree = "<group>"; };
+		D3D5835B1DDAEADD00D47E9A /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		D3D5835C1DDAEADD00D47E9A /* KDJNetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDJNetworkTools.swift; sourceTree = "<group>"; };
+		D3D583651DDAEF5F00D47E9A /* KDJStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDJStatus.swift; sourceTree = "<group>"; };
+		D3D583671DDAF98C00D47E9A /* NSDate-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate-Extension.swift"; sourceTree = "<group>"; };
+		D3D583691DDAFC9800D47E9A /* KDJUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDJUser.swift; sourceTree = "<group>"; };
+		D3D5836B1DDB076400D47E9A /* KDJStatusViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDJStatusViewModel.swift; sourceTree = "<group>"; };
+		D3D5836D1DDB0AC300D47E9A /* KDJHomeViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KDJHomeViewCell.swift; path = HomeModel/KDJHomeViewCell.swift; sourceTree = "<group>"; };
+		D3D5836F1DDB4E0000D47E9A /* KDJPicCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDJPicCollectionView.swift; sourceTree = "<group>"; };
+		D3DE78E61DD98096007A830D /* KDJPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDJPresentationController.swift; sourceTree = "<group>"; };
+		D3DE78E81DD98C7F007A830D /* KDJPopoverAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDJPopoverAnimator.swift; sourceTree = "<group>"; };
+		D3DE78EF1DD99B55007A830D /* KDJOAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDJOAuthViewController.swift; sourceTree = "<group>"; };
+		D3DE78F01DD99B55007A830D /* KDJOAuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KDJOAuthViewController.xib; sourceTree = "<group>"; };
+		D3E8887B1DDCABF600CEDBA3 /* KDJComposeTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDJComposeTitleView.swift; sourceTree = "<group>"; };
+		D3E8887D1DDCB23C00CEDBA3 /* KDJComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDJComposeViewController.swift; sourceTree = "<group>"; };
+		D3E8887E1DDCB23C00CEDBA3 /* KDJComposeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KDJComposeViewController.xib; sourceTree = "<group>"; };
+		D3E888811DDCB4A600CEDBA3 /* KDJComposeTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDJComposeTextView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D364B9241DD6B70C0013462A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04384F1142D96DE1261D5A8A /* Pods_KDJ11Weibo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9C31C3AA7AE04A3DA000028F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F9FD2EB06C45F053AF53990 /* Pods_KDJ11Weibo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D350E5281DDDC50900A0133A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D3E8887B1DDCABF600CEDBA3 /* KDJComposeTitleView.swift */,
+				D3E888811DDCB4A600CEDBA3 /* KDJComposeTextView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D350E5291DDDC51500A0133A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D350E52A1DDDC52600A0133A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D3E8887D1DDCB23C00CEDBA3 /* KDJComposeViewController.swift */,
+				D3E8887E1DDCB23C00CEDBA3 /* KDJComposeViewController.xib */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D350E52B1DDDCE5F00A0133A /* PicPicker */ = {
+			isa = PBXGroup;
+			children = (
+				D350E52E1DDDCEAD00A0133A /* KDJPicPickerCollectionView.swift */,
+				D350E5301DDDD89500A0133A /* KDJPicPickerViewCell.swift */,
+				D350E5311DDDD89500A0133A /* KDJPicPickerViewCell.xib */,
+			);
+			path = PicPicker;
+			sourceTree = "<group>";
+		};
+		D351AE491DD8048B00704485 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				D351AE4A1DD8048B00704485 /* MainVCSettings.json */,
+				D351AE5F1DD80FD700704485 /* Null.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		D364B91E1DD6B70B0013462A = {
+			isa = PBXGroup;
+			children = (
+				D364B9291DD6B70C0013462A /* KDJ11Weibo */,
+				D364B9281DD6B70C0013462A /* Products */,
+				D61423FF306EAEE9F90C26FC /* Pods */,
+				9C31C3AA7AE04A3DA000028F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D364B9281DD6B70C0013462A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D364B9271DD6B70C0013462A /* KDJ11Weibo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D364B9291DD6B70C0013462A /* KDJ11Weibo */ = {
+			isa = PBXGroup;
+			children = (
+				D364B93C1DD6BB630013462A /* Classes */,
+				D364B92A1DD6B70C0013462A /* AppDelegate.swift */,
+				D351AE4F1DD80C7000704485 /* Main.storyboard */,
+				D364B9311DD6B70C0013462A /* Assets.xcassets */,
+				D364B9331DD6B70C0013462A /* LaunchScreen.storyboard */,
+				D364B9361DD6B70C0013462A /* Info.plist */,
+			);
+			path = KDJ11Weibo;
+			sourceTree = "<group>";
+		};
+		D364B93C1DD6BB630013462A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D3E888741DDCABA900CEDBA3 /* Compose(发布) */,
+				D364B93F1DD6BB630013462A /* Main */,
+				D364B93E1DD6BB630013462A /* Home */,
+				D364B9401DD6BB630013462A /* Message */,
+				D364B93D1DD6BB630013462A /* Discover */,
+				D364B9411DD6BB630013462A /* Profile */,
+				D3D583561DDAEADD00D47E9A /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D364B93D1DD6BB630013462A /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				D364B9481DD6BFC50013462A /* KDJDiscoverViewController.swift */,
+				D351AE571DD80E9D00704485 /* Discover.storyboard */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		D364B93E1DD6BB630013462A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D3ABDE6F1DE1C0C000163573 /* PhotoBrowser */,
+				D3ABD95D1DD84CA0006F122A /* UIPopover */,
+				D3D583621DDAEF3A00D47E9A /* HomeModel */,
+				D364B9441DD6BF980013462A /* KDJHomeViewController.swift */,
+				D351AE531DD80E6A00704485 /* Home.storyboard */,
+				D3D5836D1DDB0AC300D47E9A /* KDJHomeViewCell.swift */,
+				D3D5836F1DDB4E0000D47E9A /* KDJPicCollectionView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D364B93F1DD6BB630013462A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D3D5834D1DDAE04400D47E9A /* Welcome */,
+				D351AE491DD8048B00704485 /* Resource */,
+				D3ABD9521DD8384B006F122A /* Vistor */,
+				D3DE78EA1DD99AEE007A830D /* OAuth */,
+				D364B9421DD6BE5C0013462A /* KDJMainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D364B9401DD6BB630013462A /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				D364B9461DD6BFAF0013462A /* KDJMessageViewController.swift */,
+				D351AE551DD80E8200704485 /* Message.storyboard */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		D364B9411DD6BB630013462A /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				D351AE591DD80EB500704485 /* Profile.storyboard */,
+				D364B94A1DD6BFD70013462A /* KDJProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		D3ABD9521DD8384B006F122A /* Vistor */ = {
+			isa = PBXGroup;
+			children = (
+				D3ABD9571DD83CD5006F122A /* KDJBaseViewController.swift */,
+				D3ABD9531DD83893006F122A /* KDJVistorView.swift */,
+				D3ABD9551DD838AE006F122A /* KDJVistorView.xib */,
+			);
+			path = Vistor;
+			sourceTree = "<group>";
+		};
+		D3ABD95D1DD84CA0006F122A /* UIPopover */ = {
+			isa = PBXGroup;
+			children = (
+				D3ABD9621DD84CDD006F122A /* KDJPopoverViewController.swift */,
+				D3ABD9631DD84CDD006F122A /* KDJPopoverViewController.xib */,
+				D3DE78E61DD98096007A830D /* KDJPresentationController.swift */,
+				D3DE78E81DD98C7F007A830D /* KDJPopoverAnimator.swift */,
+			);
+			path = UIPopover;
+			sourceTree = "<group>";
+		};
+		D3ABDE5B1DE195E500163573 /* Emoticon */ = {
+			isa = PBXGroup;
+			children = (
+				D3ABDE5C1DE195E500163573 /* Emoticons.bundle */,
+				D3ABDE5D1DE195E500163573 /* EmotionController.swift */,
+				D3ABDE5E1DE195E500163573 /* EmotionViewCell.swift */,
+				D3ABDE5F1DE195E500163573 /* Model */,
+				D3ABDE6D1DE1A1F100163573 /* KDJFindEmotion.swift */,
+			);
+			path = Emoticon;
+			sourceTree = "<group>";
+		};
+		D3ABDE5F1DE195E500163573 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D3ABDE601DE195E500163573 /* Emotion.swift */,
+				D3ABDE611DE195E500163573 /* EmotionAttachment.swift */,
+				D3ABDE621DE195E500163573 /* EmotionManager.swift */,
+				D3ABDE631DE195E500163573 /* EmotionPackage.swift */,
+				D3ABDE641DE195E500163573 /* UITextView-Extension.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D3ABDE6F1DE1C0C000163573 /* PhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				D3ABDE701DE1C0F100163573 /* KDJPhotoBrowserController.swift */,
+				D3ABDE721DE1C79D00163573 /* KDJPhotoBrowserViewCell.swift */,
+				D3ABDE741DE1CFFE00163573 /* KDJProgressView.swift */,
+				D3AE85B11DE1DDB200B77416 /* KDJPhotoBrowserAnimator.swift */,
+			);
+			path = PhotoBrowser;
+			sourceTree = "<group>";
+		};
+		D3D5834D1DDAE04400D47E9A /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				D3D583521DDAE07400D47E9A /* KDJWelcomeViewController.swift */,
+				D3D583531DDAE07400D47E9A /* KDJWelcomeViewController.xib */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		D3D583561DDAEADD00D47E9A /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				D3ABDE5B1DE195E500163573 /* Emoticon */,
+				D3D583571DDAEADD00D47E9A /* Category */,
+				D3D5835B1DDAEADD00D47E9A /* Common.swift */,
+				D3D5835C1DDAEADD00D47E9A /* KDJNetworkTools.swift */,
+			);
+			name = Tools;
+			path = ../Tools;
+			sourceTree = "<group>";
+		};
+		D3D583571DDAEADD00D47E9A /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				D3D583581DDAEADD00D47E9A /* KDJTitleButton.swift */,
+				D3D583591DDAEADD00D47E9A /* UIBarButtonItem-Extension.swift */,
+				D3D5835A1DDAEADD00D47E9A /* UIButton-Extension.swift */,
+				D3D583671DDAF98C00D47E9A /* NSDate-Extension.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		D3D583621DDAEF3A00D47E9A /* HomeModel */ = {
+			isa = PBXGroup;
+			children = (
+				D3D583651DDAEF5F00D47E9A /* KDJStatus.swift */,
+				D3D583691DDAFC9800D47E9A /* KDJUser.swift */,
+				D3D5836B1DDB076400D47E9A /* KDJStatusViewModel.swift */,
+			);
+			path = HomeModel;
+			sourceTree = "<group>";
+		};
+		D3DE78EA1DD99AEE007A830D /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				D3DE78EF1DD99B55007A830D /* KDJOAuthViewController.swift */,
+				D3DE78F01DD99B55007A830D /* KDJOAuthViewController.xib */,
+				D3232DDA1DD9ACCD00F66246 /* KDJUserAccount.swift */,
+				D3D5834B1DDADC4200D47E9A /* KDJUserAccountViewModel.swift */,
+			);
+			path = OAuth;
+			sourceTree = "<group>";
+		};
+		D3E888741DDCABA900CEDBA3 /* Compose(发布) */ = {
+			isa = PBXGroup;
+			children = (
+				D350E52B1DDDCE5F00A0133A /* PicPicker */,
+				D350E52A1DDDC52600A0133A /* Controller */,
+				D350E5291DDDC51500A0133A /* Model */,
+				D350E5281DDDC50900A0133A /* View */,
+			);
+			path = "Compose(发布)";
+			sourceTree = "<group>";
+		};
+		D61423FF306EAEE9F90C26FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15B0A3049A1DFC16E38345C7 /* Pods-KDJ11Weibo.debug.xcconfig */,
+				52ADA1546B278E635CBC2A14 /* Pods-KDJ11Weibo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D364B9261DD6B70C0013462A /* KDJ11Weibo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D364B9391DD6B70C0013462A /* Build configuration list for PBXNativeTarget "KDJ11Weibo" */;
+			buildPhases = (
+				CA4D6F417F02012B8C0033C5 /* [CP] Check Pods Manifest.lock */,
+				D364B9231DD6B70C0013462A /* Sources */,
+				D364B9241DD6B70C0013462A /* Frameworks */,
+				D364B9251DD6B70C0013462A /* Resources */,
+				B0FF35B0E04BC263D8E05EA7 /* [CP] Embed Pods Frameworks */,
+				A693DB77553F09EAE5D0FC15 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KDJ11Weibo;
+			productName = KDJ11Weibo;
+			productReference = D364B9271DD6B70C0013462A /* KDJ11Weibo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D364B91F1DD6B70B0013462A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KDJ;
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Kavee DJ";
+				TargetAttributes = {
+					D364B9261DD6B70C0013462A = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = QTW2G6ETNV;
+					};
+				};
+			};
+			buildConfigurationList = D364B9221DD6B70B0013462A /* Build configuration list for PBXProject "KDJ11Weibo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D364B91E1DD6B70B0013462A;
+			productRefGroup = D364B9281DD6B70C0013462A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D364B9261DD6B70C0013462A /* KDJ11Weibo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D364B9251DD6B70C0013462A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D364B9351DD6B70C0013462A /* LaunchScreen.storyboard in Resources */,
+				D3E888801DDCB23C00CEDBA3 /* KDJComposeViewController.xib in Resources */,
+				D351AE541DD80E6A00704485 /* Home.storyboard in Resources */,
+				D3ABD9651DD84CDD006F122A /* KDJPopoverViewController.xib in Resources */,
+				D351AE5A1DD80EB500704485 /* Profile.storyboard in Resources */,
+				D350E5331DDDD89500A0133A /* KDJPicPickerViewCell.xib in Resources */,
+				D364B9321DD6B70C0013462A /* Assets.xcassets in Resources */,
+				D351AE4B1DD8048B00704485 /* MainVCSettings.json in Resources */,
+				D351AE601DD80FD700704485 /* Null.storyboard in Resources */,
+				D3ABDE651DE195E500163573 /* Emoticons.bundle in Resources */,
+				D3D583551DDAE07400D47E9A /* KDJWelcomeViewController.xib in Resources */,
+				D351AE561DD80E8200704485 /* Message.storyboard in Resources */,
+				D3DE78F21DD99B55007A830D /* KDJOAuthViewController.xib in Resources */,
+				D3ABD9561DD838AE006F122A /* KDJVistorView.xib in Resources */,
+				D351AE581DD80E9D00704485 /* Discover.storyboard in Resources */,
+				D351AE501DD80C7000704485 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A693DB77553F09EAE5D0FC15 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KDJ11Weibo/Pods-KDJ11Weibo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0FF35B0E04BC263D8E05EA7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KDJ11Weibo/Pods-KDJ11Weibo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA4D6F417F02012B8C0033C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D364B9231DD6B70C0013462A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3232DDB1DD9ACCD00F66246 /* KDJUserAccount.swift in Sources */,
+				D3ABDE6B1DE195E500163573 /* EmotionPackage.swift in Sources */,
+				D3D5835F1DDAEADD00D47E9A /* UIButton-Extension.swift in Sources */,
+				D3ABDE691DE195E500163573 /* EmotionAttachment.swift in Sources */,
+				D3D583661DDAEF5F00D47E9A /* KDJStatus.swift in Sources */,
+				D3ABD9641DD84CDD006F122A /* KDJPopoverViewController.swift in Sources */,
+				D364B92B1DD6B70C0013462A /* AppDelegate.swift in Sources */,
+				D3DE78F11DD99B55007A830D /* KDJOAuthViewController.swift in Sources */,
+				D3ABD9581DD83CD5006F122A /* KDJBaseViewController.swift in Sources */,
+				D3DE78E91DD98C7F007A830D /* KDJPopoverAnimator.swift in Sources */,
+				D3D5835D1DDAEADD00D47E9A /* KDJTitleButton.swift in Sources */,
+				D3ABDE6C1DE195E500163573 /* UITextView-Extension.swift in Sources */,
+				D3ABD9541DD83893006F122A /* KDJVistorView.swift in Sources */,
+				D364B9491DD6BFC50013462A /* KDJDiscoverViewController.swift in Sources */,
+				D350E5321DDDD89500A0133A /* KDJPicPickerViewCell.swift in Sources */,
+				D3E8887F1DDCB23C00CEDBA3 /* KDJComposeViewController.swift in Sources */,
+				D3D583541DDAE07400D47E9A /* KDJWelcomeViewController.swift in Sources */,
+				D3E8887C1DDCABF600CEDBA3 /* KDJComposeTitleView.swift in Sources */,
+				D350E52F1DDDCEAD00A0133A /* KDJPicPickerCollectionView.swift in Sources */,
+				D3ABDE6A1DE195E500163573 /* EmotionManager.swift in Sources */,
+				D3E888821DDCB4A600CEDBA3 /* KDJComposeTextView.swift in Sources */,
+				D3ABDE711DE1C0F100163573 /* KDJPhotoBrowserController.swift in Sources */,
+				D3ABDE661DE195E500163573 /* EmotionController.swift in Sources */,
+				D3ABDE751DE1CFFE00163573 /* KDJProgressView.swift in Sources */,
+				D3D5836C1DDB076400D47E9A /* KDJStatusViewModel.swift in Sources */,
+				D3ABDE671DE195E500163573 /* EmotionViewCell.swift in Sources */,
+				D3AE85B21DE1DDB200B77416 /* KDJPhotoBrowserAnimator.swift in Sources */,
+				D3D5836E1DDB0AC300D47E9A /* KDJHomeViewCell.swift in Sources */,
+				D3D583681DDAF98C00D47E9A /* NSDate-Extension.swift in Sources */,
+				D3D5835E1DDAEADD00D47E9A /* UIBarButtonItem-Extension.swift in Sources */,
+				D3D583611DDAEADD00D47E9A /* KDJNetworkTools.swift in Sources */,
+				D364B9451DD6BF980013462A /* KDJHomeViewController.swift in Sources */,
+				D364B9471DD6BFAF0013462A /* KDJMessageViewController.swift in Sources */,
+				D3D5836A1DDAFC9800D47E9A /* KDJUser.swift in Sources */,
+				D3DE78E71DD98097007A830D /* KDJPresentationController.swift in Sources */,
+				D3ABDE6E1DE1A1F100163573 /* KDJFindEmotion.swift in Sources */,
+				D3D583701DDB4E0000D47E9A /* KDJPicCollectionView.swift in Sources */,
+				D3D583601DDAEADD00D47E9A /* Common.swift in Sources */,
+				D364B94B1DD6BFD70013462A /* KDJProfileViewController.swift in Sources */,
+				D3ABDE681DE195E500163573 /* Emotion.swift in Sources */,
+				D3ABDE731DE1C79D00163573 /* KDJPhotoBrowserViewCell.swift in Sources */,
+				D3D5834C1DDADC4200D47E9A /* KDJUserAccountViewModel.swift in Sources */,
+				D364B9431DD6BE5C0013462A /* KDJMainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D364B9331DD6B70C0013462A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D364B9341DD6B70C0013462A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D364B9371DD6B70C0013462A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D364B9381DD6B70C0013462A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D364B93A1DD6B70C0013462A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15B0A3049A1DFC16E38345C7 /* Pods-KDJ11Weibo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				INFOPLIST_FILE = KDJ11Weibo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kavee.KDJ11Weibo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D364B93B1DD6B70C0013462A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52ADA1546B278E635CBC2A14 /* Pods-KDJ11Weibo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				INFOPLIST_FILE = KDJ11Weibo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kavee.KDJ11Weibo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D364B9221DD6B70B0013462A /* Build configuration list for PBXProject "KDJ11Weibo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D364B9371DD6B70C0013462A /* Debug */,
+				D364B9381DD6B70C0013462A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D364B9391DD6B70C0013462A /* Build configuration list for PBXNativeTarget "KDJ11Weibo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D364B93A1DD6B70C0013462A /* Debug */,
+				D364B93B1DD6B70C0013462A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D364B91F1DD6B70B0013462A /* Project object */;
+}
